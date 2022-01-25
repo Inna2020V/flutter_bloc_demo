@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/with_bloc/bloc/cart_bloc.dart';
-import 'package:flutter_bloc_demo/with_bloc/bloc/event/cart_event.dart';
-
-import '../../models/product.dart';
-import '../product_page.dart';
+import 'package:flutter_lesson_11_bloc_shopping_list/bloc/cart_bloc.dart';
+import 'package:flutter_lesson_11_bloc_shopping_list/bloc/cart_event.dart';
 
 class ProductTile extends StatelessWidget {
   final int itemNo;
@@ -19,13 +16,7 @@ class ProductTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ListTile(
-        onTap: () {
-          Navigator.pushNamed(
-            context,
-            ProductPage.routeName,
-            arguments: Product('Product $itemNo', color),
-          );
-        },
+        onTap: () {},
         leading: Container(
           width: 50,
           height: 30,

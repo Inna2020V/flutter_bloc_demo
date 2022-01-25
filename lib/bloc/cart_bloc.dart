@@ -1,7 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/with_bloc/bloc/state/cart_state.dart';
-
-import 'event/cart_event.dart';
+import 'package:flutter_lesson_11_bloc_shopping_list/bloc/cart_event.dart';
+import 'package:flutter_lesson_11_bloc_shopping_list/bloc/cart_state.dart';
 
 class CartBloc extends Bloc<CartEvent, CartState> {
   CartBloc() : super(ProductAdded(cartItem: []));

@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/with_bloc/view/home.dart';
-
+import 'package:flutter_lesson_11_bloc_shopping_list/view/home_page.dart';
 import 'bloc_observer.dart';
-import 'with_bloc/view/home.dart';
 
-// Without Bloc
-// void main() {
-//   runApp(MyApp());
-// }
-//
-
-//With Bloc
 void main() {
   Bloc.observer = SimpleBlocObserver();
   runApp(MyApp());
@@ -28,10 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         HomePage.routeName: (context) => HomePage(),
-        //CartPage.routeName: (context) => CartPage(),
       },
       initialRoute: HomePage.routeName,
-      //home: MyBookings(),
       debugShowCheckedModeBanner: false,
     );
   }
